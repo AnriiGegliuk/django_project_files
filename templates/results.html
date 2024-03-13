@@ -1,0 +1,10 @@
+<!-- result.html -->
+{% extends "base.html" %}
+
+{% block main %}
+<div style="margin: 20px;">
+    <h1>Prediction Result</h1>
+    <p>The predicted classification is: {{ classification }}</p>
+    <a href="{% url 'predict:prediction_page' %}">Try another prediction</a>
+</div>
+{% endblock %}
